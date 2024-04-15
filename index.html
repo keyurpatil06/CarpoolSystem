@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Carpool</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4d5c71;
+            color: #f0ebd8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #main {
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            padding: 1rem;
+            background-color: #313d50;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h5 {
+            background-color: #f44336;
+            color: white;
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.25rem;
+        }
+
+        #form-area {
+            padding: 2rem;
+            background-color: #1d2d44;
+            border-radius: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            margin: 1rem 0;
+            padding: 1rem;
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            outline: none;
+            background-color: #98a9c1;
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            font-weight: normal;
+            color: #404040;
+        }
+
+        button {
+            width: 50%;
+            padding: 0.75rem 1rem;
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+            outline: none;
+            margin: 1rem 0;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        <h1>Carpool System</h1>
+        <h5>Login if account exist else new acccount will be automatically created</h5>
+
+        <div id="form-area">
+            <form action="action.php" method="post">
+                <input type="text" name="person_id" placeholder="Create your personal ID" required>
+                <input type="text" name="driver_id" placeholder="Create your driver ID" required>
+                <input type="text" name="passenger_id" placeholder="Create your passenger ID" required>
+                <input type="text" name="email" placeholder="Enter your email" required>
+                <input type="text" name="phone" placeholder="Enter your phone no." required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
